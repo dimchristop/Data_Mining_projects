@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 8 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     complex8
+Instances:    2551
+Attributes:   3
+              x
+              y
+Ignored:
+              class
+Test mode:    Classes to clusters evaluation on training data
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 24
+Within cluster sum of squared errors: 44.87770793271743
+
+Initial starting points (random):
+
+Cluster 0: 63.76,274.755
+Cluster 1: 170.249,249.485
+Cluster 2: 600.177,276.823
+Cluster 3: 327.722,108.153
+Cluster 4: 171.751,373.785
+Cluster 5: 252.868,284.662
+Cluster 6: 186.704,91.046
+Cluster 7: 147.155,235.835
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                         Cluster#
+Attribute    Full Data          0          1          2          3          4          5          6          7
+              (2551.0)    (296.0)    (310.0)    (304.0)    (334.0)    (225.0)    (230.0)    (431.0)    (421.0)
+==============================================================================================================
+x             325.9282   126.4507   351.7977   574.1763   589.9378   142.7289    348.146   127.1345   347.7075
+y             207.5733   254.3371   255.8505    294.043   120.7562   357.5316   358.8994    86.3286   106.8916
+
+
+
+
+Time taken to build model (full training data) : 0.08 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       296 ( 12%)
+1       310 ( 12%)
+2       304 ( 12%)
+3       334 ( 13%)
+4       225 (  9%)
+5       230 (  9%)
+6       431 ( 17%)
+7       421 ( 17%)
+
+
+Class attribute: class
+Classes to Clusters:
+
+   0   1   2   3   4   5   6   7  <-- assigned to cluster
+   0   0   0  60   0   0   0   0 | 0
+  27  31   0   0   0   0   0   0 | 1
+ 265 252   2   0   0   0   0   0 | 2
+   0   0   0   0   0   0 311 172 | 3
+   0   1  87  32   0   1   0   0 | 4
+   0   0   0   0   0   0 120 249 | 5
+   4  26   0   0 225 229   0   0 | 6
+   0   0 215 242   0   0   0   0 | 7
+
+Cluster 0 <-- 2
+Cluster 1 <-- 1
+Cluster 2 <-- 4
+Cluster 3 <-- 7
+Cluster 4 <-- No class
+Cluster 5 <-- 6
+Cluster 6 <-- 3
+Cluster 7 <-- 5
+
+Incorrectly clustered instances :	1137.0	 44.5708 %
+

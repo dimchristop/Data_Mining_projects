@@ -1,0 +1,139 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.01 -S -1.0 -c -1
+Relation:     try2-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    2759
+Attributes:   96
+              Row Labels
+              Actian
+              Alpine Data Labs
+              Alteryx
+              Amazon Machine Learning
+              Angoss
+              Ayasdi
+              BayesiaLab
+              BigML
+              Birst
+              C/C++
+              C4.5/C5.0/See5
+              Caffe
+              Clojure
+              Cuda-convnet
+              Dataiku
+              Datameer
+              Dato (former Graphlab)
+              Deeplearning4j
+              Dell (including Statistica)
+              Excel
+              F#
+              FICO Model Builder
+              Gnu Octave
+              GoodData
+              H2O (0xdata)
+              Hadoop
+              HBase
+              Hive
+              IBM Cognos
+              IBM SPSS Modeler
+              IBM SPSS Statistics
+              IBM Watson Analytics
+              Java
+              JMP
+              Julia
+              KNIME
+              Lavastorm
+              Lexalytics
+              Lisp
+              Mahout
+              Mathematica
+              MATLAB
+              Megaputer Polyanalyst/TextAnalyst
+              MetaMind
+              Microsoft Azure ML
+              Microsoft Power BI
+              Microsoft SQL Server
+              Microstrategy
+              Miner3D
+              MLlib
+              Ontotext
+              Oracle Data Miner
+              Orange
+              Other Deep Learning tools
+              Other free analytics/data mining tools
+              Other Hadoop/HDFS-based tools
+              Other paid analytics/data mining/data science software
+              Other programming languages
+              Pentaho
+              Perl
+              Pig
+              Predixion Software
+              Pylearn2
+              Python
+              QlikView
+              RapidInsight/Veera
+              RapidMiner
+              Rattle
+              Revolution Analytics (now part of Microsoft)
+              Rlang
+              Ruby
+              Salford SPM/CART/Random Forests/MARS/TreeNet
+              SAP (including former KXEN)
+              SAS base
+              SAS Enterprise Miner
+              Scala
+              scikit-learn
+              SiSense
+              Skytree
+              Spark
+              Splunk/ Hunk
+              SQL on Hadup tools
+              SQLang
+              Stata
+              Tableau
+              Theano
+              TIBCO Spotfire
+              Torch
+              Unix shell/awk/gawk
+              Vowpal Wabbit
+              Weka
+              WordStat
+              WPS: World Programming System
+              XLSTAT for Excel
+              Zementis
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.01 (28 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 20
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 65
+
+Size of set of large itemsets L(2): 368
+
+Size of set of large itemsets L(3): 564
+
+Size of set of large itemsets L(4): 325
+
+Size of set of large itemsets L(5): 80
+
+Size of set of large itemsets L(6): 8
+
+Best rules found:
+
+ 1. Python=1 Revolution Analytics (now part of Microsoft)=1 55 ==> Rlang=1 55    <conf:(1)> lift:(2.13) lev:(0.01) [29] conv:(29.22)
+ 2. Python=1 Rattle=1 44 ==> Rlang=1 44    <conf:(1)> lift:(2.13) lev:(0.01) [23] conv:(23.38)
+ 3. MLlib=1 Scala=1 38 ==> Spark=1 38    <conf:(1)> lift:(8.87) lev:(0.01) [33] conv:(33.72)
+ 4. Hadoop=1 Revolution Analytics (now part of Microsoft)=1 37 ==> Rlang=1 37    <conf:(1)> lift:(2.13) lev:(0.01) [19] conv:(19.66)
+ 5. Hive=1 Revolution Analytics (now part of Microsoft)=1 31 ==> Rlang=1 31    <conf:(1)> lift:(2.13) lev:(0.01) [16] conv:(16.47)
+ 6. Python=1 Revolution Analytics (now part of Microsoft)=1 SQLang=1 31 ==> Rlang=1 31    <conf:(1)> lift:(2.13) lev:(0.01) [16] conv:(16.47)
+ 7. Hive=1 Spark=1 SQL on Hadup tools=1 SQLang=1 31 ==> Hadoop=1 31    <conf:(1)> lift:(5.44) lev:(0.01) [25] conv:(25.3)
+ 8. Pig=1 Rlang=1 Tableau=1 30 ==> Hadoop=1 30    <conf:(1)> lift:(5.44) lev:(0.01) [24] conv:(24.49)
+ 9. Hadoop=1 Revolution Analytics (now part of Microsoft)=1 SQLang=1 30 ==> Rlang=1 30    <conf:(1)> lift:(2.13) lev:(0.01) [15] conv:(15.94)
+10. MLlib=1 Rlang=1 Scala=1 30 ==> Spark=1 30    <conf:(1)> lift:(8.87) lev:(0.01) [26] conv:(26.62)
+
